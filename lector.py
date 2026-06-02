@@ -18,3 +18,17 @@ def mostrar_config(app, version, debug):
 
 config = mostrar_config(app, version, debug)
 print(f"Configuración cargada: {len(config)} variables")
+
+
+def calcular_promedio(notas):
+    """Calcula el promedio de una lista de notas.
+
+    Args:
+        notas (list): Lista de números flotantes.
+
+    Returns:
+        float: Promedio de las notas. Retorna 0 si la lista está vacía.
+    """
+    if not notas:
+        return 0
+    return sum(notas) / len(notas)
